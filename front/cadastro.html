@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agronomia</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+
+
+  </head>
+  <body>
+    <nav class="navbar  navbar-inverse nav-transparente">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed"
+                         data-toggle="collapse" data-target="#barraNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand">
+                    <img src="imagens/logo.gif" class="foto-logo">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="barraNav">
+                <ul class="nav navbar-nav navbar-right" id="itensNav">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a  href="quem-somos.html">Quem somos</a></li>
+                    <li><a  href="produtos.html">Produtos</a></li>
+                    <li><a  href="contatos.html">Contatos</a></li>
+                    <li><a  href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <section>
+        <h1 id="titulo_principal">CADASTRO DE AGRONOMOS</h1>
+        <div id="msg"></div>
+        <div id="formulario">
+            <h2>Formulário</h2>
+
+            <form action="/" id="form_cadastro" method="POST">
+                
+                <div class="form-group">
+                        <label for="id">Código</label>
+                        <input type="number" class="form-control" id="id"  disabled>
+                </div>
+
+                <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu Sobrenome" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereco" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="estado">estado</label>
+                        <input type="text" class="form-control" id="estado" placeholder="Digite seu estado" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="cidade">cidade</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="Digite seu cidade" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="culturas">Culturas</label>
+                        <input type="text" class="form-control" id="culturas" placeholder="Digite seu culturas" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="crea">CREA</label>
+                        <input type="text" class="form-control" id="crea" placeholder="Digite seu crea" required>
+                </div>
+
+                <div class="form-group">
+                        <label for="crea_estado">CREA-ESTADO</label>
+                        <input type="text" class="form-control" id="crea_estado" placeholder="Digite seu crea_estado" required>
+                </div>
+
+                
+                    <button type="submit" id="btn-cadastrar-formulario" class="btn btn-success">Salvar</button>
+                    <button type="submit" id="btn-cancelar-operação" class="btn btn-primary">Cancelar</button>
+                
+              </form>
+        </div>
+                
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row bloco">
+                <div class="col-md-4 col-tds">
+                    <a href="index.html" class="navbar-brand">
+                       <img src="imagens/logo.gif" class="foto-logo" id="logo_footer">
+                    </a>
+                </div>
+                <div class="col-md-4 col-tds" id="linksFooter">
+                      <ul>
+                        <h4>LINKS</h4>
+                        <li><a  href="quem-somos.html">Quem somos</a></li>
+                        <li><a  href="produtos.html">Produtos</a></li>
+                        <li><a  href="contatos.html">Contatos</a></li>
+                        <li><a  href="cadastro.html">Cadastre-se</a></li>
+                        
+                      </ul>
+                </div>
+                <div class="col-md-4 col-tds">
+                        <h4>Endereço</h4>
+
+                        <address>
+                            <i class="fa fa-map-marker">Rua: teste, 1000, centro.</i>
+                        </address>
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
